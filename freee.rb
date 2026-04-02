@@ -11,7 +11,7 @@ class Freee < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/planitaicojp/freee-cli/releases/download/v0.5.3/freee-cli_0.5.3_darwin_amd64.tar.gz"
-      sha256 "51fdeef0161fd114522516ecf30d0de6b21a1827945cd172a819c14c06a10197"
+      sha256 "d767ea3d29373e00bf1a4599006118113daed5413b22b4e8f8fbe8d3e88f47f7"
 
       define_method(:install) do
         bin.install "freee"
@@ -19,7 +19,7 @@ class Freee < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/planitaicojp/freee-cli/releases/download/v0.5.3/freee-cli_0.5.3_darwin_arm64.tar.gz"
-      sha256 "300587ca8fef20073689a6c52bf96eb50da4c1dfe92148235422d20a50739910"
+      sha256 "002d9b936e3032fd569b84d0ab7ec72d95ab1e44ed71c340cb43e29ef7fd57ed"
 
       define_method(:install) do
         bin.install "freee"
@@ -30,14 +30,14 @@ class Freee < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/planitaicojp/freee-cli/releases/download/v0.5.3/freee-cli_0.5.3_linux_amd64.tar.gz"
-      sha256 "c45a6adfd05d18fcf65c9204d88a34a1b7321797bb9e10c9a5a7ba8e2b0887fb"
+      sha256 "99077516d7e170071367ddbdad0df5ad9c505e4822f45194dce1debc4fe312ef"
       define_method(:install) do
         bin.install "freee"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/planitaicojp/freee-cli/releases/download/v0.5.3/freee-cli_0.5.3_linux_arm64.tar.gz"
-      sha256 "ffce8214e03f361d443b0b5c797cc2c5015a6ee7a24eb0d75c582620e08a1064"
+      sha256 "ae7b736c5cab61ac03dfc4b0349ae8a7c35cb19193c7a21f2e5e3caca15f5ae2"
       define_method(:install) do
         bin.install "freee"
       end
