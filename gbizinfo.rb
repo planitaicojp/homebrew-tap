@@ -11,7 +11,7 @@ class Gbizinfo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/planitaicojp/gbizinfo-cli/releases/download/v0.1.0/gbizinfo-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "aa71ea4bfdac77c017383f0be40745a4d11bdae24d47982a6bd39a663729738f"
+      sha256 "ac3e8a3aaddee55100900d4523c42cd3d46e1b06cb92ef1310ba6639935cd13b"
 
       define_method(:install) do
         bin.install "gbizinfo"
@@ -19,7 +19,7 @@ class Gbizinfo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/planitaicojp/gbizinfo-cli/releases/download/v0.1.0/gbizinfo-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a13f7fe21623263e361e9218b28f596597bfe0e4d168a8dc4eb22adbf319c192"
+      sha256 "7ce7b71ea4fea1f02be60d2044d42ee4f100b4b16a258af7fc3f20a493517ef6"
 
       define_method(:install) do
         bin.install "gbizinfo"
@@ -30,14 +30,14 @@ class Gbizinfo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/planitaicojp/gbizinfo-cli/releases/download/v0.1.0/gbizinfo-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "42f631ac63fb15da57b0c3408ad2e309fd53304b4dae195ef3ebd5fd5307b19b"
+      sha256 "f55c99dfcbc65af7a9bab1667eb2f0e922a8ef4aec7fc7cc5644833047a70b32"
       define_method(:install) do
         bin.install "gbizinfo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/planitaicojp/gbizinfo-cli/releases/download/v0.1.0/gbizinfo-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "0e41f41ef213603e97def67fddad478e52cfa7b2699279bbab53a740063cf822"
+      sha256 "f1b9e21e9c903096fe98703904691e8f359c5e192941a4c4c21f8617efa46ff1"
       define_method(:install) do
         bin.install "gbizinfo"
       end
