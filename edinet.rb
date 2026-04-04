@@ -5,21 +5,21 @@
 class Edinet < Formula
   desc "CLI tool for EDINET API v2 - 金融庁 開示書類の検索・取得"
   homepage "https://github.com/planitaicojp/edinet-cli"
-  version "0.3.1"
+  version "0.3.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/planitaicojp/edinet-cli/releases/download/v0.3.1/edinet-cli_0.3.1_darwin_amd64.tar.gz"
-      sha256 "eadc32a3645ae75cc9da3c9a67e3010788697cf200d529d670ef00c9af630a1e"
+      url "https://github.com/planitaicojp/edinet-cli/releases/download/v0.3.2/edinet-cli_0.3.2_darwin_amd64.tar.gz"
+      sha256 "a4a0d89891c66856487762089b507b49b3383e979d3833e224f088a1dea1c77d"
 
       define_method(:install) do
         bin.install "edinet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/planitaicojp/edinet-cli/releases/download/v0.3.1/edinet-cli_0.3.1_darwin_arm64.tar.gz"
-      sha256 "13eb28ed5faab1c71bb34f6f19a9de79100ceb2c90f4df8d96656335742ff892"
+      url "https://github.com/planitaicojp/edinet-cli/releases/download/v0.3.2/edinet-cli_0.3.2_darwin_arm64.tar.gz"
+      sha256 "bd5137aeb41b6ca30f94f81c32b404a24e757005b960af88f260af1ed7e27a55"
 
       define_method(:install) do
         bin.install "edinet"
@@ -29,15 +29,15 @@ class Edinet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/planitaicojp/edinet-cli/releases/download/v0.3.1/edinet-cli_0.3.1_linux_amd64.tar.gz"
-      sha256 "e5028bc746b889048977557140cc41a3e2683cd6aeec254ff82ba2bd9548f070"
+      url "https://github.com/planitaicojp/edinet-cli/releases/download/v0.3.2/edinet-cli_0.3.2_linux_amd64.tar.gz"
+      sha256 "3ef3c35aef1d4e14d6fe6f59f075b1473b81669a4b16b39cc56fd86ba2ec51ab"
       define_method(:install) do
         bin.install "edinet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/planitaicojp/edinet-cli/releases/download/v0.3.1/edinet-cli_0.3.1_linux_arm64.tar.gz"
-      sha256 "7c82d5654f54d10f224065e610620ea4bd271918af35d5595fb99fccf5acc212"
+      url "https://github.com/planitaicojp/edinet-cli/releases/download/v0.3.2/edinet-cli_0.3.2_linux_arm64.tar.gz"
+      sha256 "0cf50e9f2120f806d0d0926fd26b950c2b0aa05cb65e1d9ea61a56ef280d8272"
       define_method(:install) do
         bin.install "edinet"
       end
